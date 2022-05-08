@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Validation Form</title>
+</head>
+<body>
+    <div class="main">
+        <form action="" class="form" id="form-1">
+            <h3 class="heading">Thành viên đăng ký</h3>
+            <p class="desc">Đăng ký tài khoản để trở thành thành viên mới!</p>
+
+            <div class="spacer"></div>
+
+            <div class="form-group">
+                <label for="fullname" class="form-label">Tên đầy đủ</label>
+                <input type="text" name="fullname" id="fullname" class="form-control" placeholder="VD: Cong Trinh">
+                <span class="form-msg"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="VD: conbo1102a@gmail.com">
+                <span class="form-msg"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="password" class="form-label">Nhập mật khẩu</label>
+                <input type="password" name="password" id="password" class="form-control" placeholder="Nhập mật khẩu">
+                <span class="form-msg"></span>
+            </div>
+            <div class="form-group">
+                <label for="password-confirmation" class="form-label">Nhập lại mật khẩu</label>
+                <input type="password" name="password-confirmation" id="password-confirmation" class="form-control" placeholder="Nhập lại mật khẩu">
+                <span class="form-msg"></span>
+            </div>
+            <div class="form-group">
+                <label for="gender" class="form-label">Giới tính</label>
+                <div class="form-gender">
+                    <div class="gender-box">
+                        <input type="radio" name="gender" value="male" class="form-control">      
+                        <span class="gender-label">Nam</span>           
+                     </div>
+                    <div class="gender-box">
+                        <input type="radio" name="gender" value="female" class="form-control">
+                        <span class="gender-label">Nữ</span>           
+                    </div>
+                    <div class="gender-box">
+                        <input type="radio" name="gender" value="other" class="form-control">                    
+                        <span class="gender-label">Khác</span> 
+                    </div>
+                </div>
+                <span class="form-msg"></span>
+            </div>
+            <div class="form-group">
+                <label for="address" class="form-label">Địa chỉ</label>
+                <select id="province" class="form-control" name="province">
+                    <option value="">-- Chọn tỉnh/thành phố --</option>
+                    <option value="qbh"> Quảng Bình </option>
+                    <option value="dng"> Đà Nẵng </option>
+                    <option value="hcm"> Tp. Hồ Chí Minh </option>
+                </select> 
+                <span class="form-msg"></span>
+            </div>
+            <div class="form-group ">
+                <label for="avatar-choosing" class="form-label">Chọn ảnh đại diện</label>
+                <input type="file" name="avatar" id="avatar" class="form-control avatar" >
+                <span class="form-msg"></span>
+            </div>
+            <button class="form-submit">Đăng ký</button>
+        </form>
+    </div>
+    <script src="./assets/validator.js"></script>
+</body>
+</html>
