@@ -124,7 +124,7 @@ html {
     padding-left: 8px;
 }
 
-.form-control.avatar {
+#avatar {
     padding: 0;
     padding: 8px 0 0 24px;
 }
